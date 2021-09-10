@@ -2,9 +2,8 @@
  * @Author: chenyilin
  * @Date: 2021-09-10 19:17:44
  * @LastEditTime: 2021-09-10 21:49:59
- * @LastEditors: Please set LastEditors
+ * @LastEditors: chenyilin
  * @Description: In User Settings Edit
- * @FilePath: \undefinedc:\VScode_c\level1\p09(dij).cpp
  */
 
 #include <cstdio>
@@ -25,7 +24,7 @@ const int MA = 100010;
 
 int a[200][200], tmp[200][200];
 const char type[8] = {'*', ' ', '&','>', '<', '|', 'S', 'E'};
-void printMAP(){
+void printMAP(){                    //打印迷宫
     if (a[0][1] != 2) a[0][1] = 6;
     if (a[N - 1][M - 2] != 2) a[N - 1][M - 2] = 7;
 
@@ -36,7 +35,7 @@ void printMAP(){
         printf("\n");
     }
 }    
-void reLoad(){
+void reLoad(){                      //伪加载
 	system("cls");
 	int t = 0;
 	srand((unsigned)time(NULL));
@@ -50,7 +49,7 @@ void reLoad(){
 	
 }
 
-void createMAP(){
+void createMAP(){                   //随机构造迷宫
     memset(a, 0, sizeof(a));
 
     int max_Size = N * M, tx, ty;
@@ -69,7 +68,7 @@ void createMAP(){
 const int dx[4] = {0, 0, 1, -1};
 const int dy[4] = {1, -1, 0, 0};
 
-int ask_S(int x, int y){
+int ask_S(int x, int y){        //每个点转换成具体编号
     if (x < 0 || y < 0) return -1;
     if (x >= N || y >= M) return -1;
 
@@ -79,12 +78,12 @@ int ask_S(int x, int y){
 
 int nxt[MA], lst[MA], to[MA], cnt = 0;
 
-void add(int f, int t){
+void add(int f, int t){         //链式前向星储存图
     nxt[++cnt] = lst[f];
     lst[f] = cnt;
     to [cnt] = t;
 }
-void pre_DIJ(){
+void pre_DIJ(){                 //构造图
     memset(lst, 0, sizeof(lst));
     cnt = 0;
 
@@ -111,7 +110,7 @@ int d[MA], pre_d[MA];
 
 typedef pair<int, int> P;
 
-int check(){
+int check(){                    //最短路算法判断地图合法性及求出最短路径
     for (int i = 0; i < N * M; i++) d[i] = INF;
     d[ask_S(N - 1, M - 2)] = 0;
 
@@ -134,7 +133,7 @@ int check(){
     if (d[ask_S(0, 1)] == INF) return -1;
     else return d[ask_S(0, 1)];
 }
-int ask_char(int p, int q){
+int ask_char(int p, int q){     //每一种操作对应某种操作
     // {'*', ' ', '&','>', '<', '|', 'S', 'E'};
     int y1 = p % N;
     int y2 = q % N;
@@ -144,7 +143,7 @@ int ask_char(int p, int q){
 }
 
 int min_ste;
-void ready(){
+void ready(){                   //构造并判断地图，并处理出最短路径
 	system("cls");
     min_ste = -1;
     cout<<"\t*                Map is creating, please wait.              *"<<endl;
@@ -165,7 +164,7 @@ void ready(){
 void GameStart();
 void AutoGame();
 
-void menu(){
+void menu(){                    //UI菜单
     system("cls");
 	
 	cout<<"\t****************************************"<<endl;
@@ -194,13 +193,13 @@ void menu(){
             menu();
     }
 }
-void reStart(){
+void reStart(){                 //重新开始游戏
     cout<<"\n\n              Press any key to restart."<<endl;
     getch();
     ready();
     menu();
 }
-void AutoGame(){
+void AutoGame(){                //打印出最短路
 	//reLoad();
     system("cls");
     a[0][1] = 6;
@@ -208,7 +207,7 @@ void AutoGame(){
     cout<<"\n\n              The minimum step is "<<min_ste<<endl;
     reStart();
 }
-void GameStart(){
+void GameStart(){               //玩家开始游戏
     system("cls");
     for (int i = 0; i < N; i++) for (int j = 0; j < M; j++) tmp[i][j] = a[i][j];
     for (int i = 0; i < N; i++) for (int j = 0; j < M; j++) a[i][j] = (a[i][j] > 0);
