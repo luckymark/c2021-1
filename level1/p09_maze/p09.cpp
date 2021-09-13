@@ -1,8 +1,8 @@
 /*
  * @Author: chenyilin
  * @Date: 2021-09-10 19:17:44
- * @LastEditTime: 2021-09-10 21:49:59
- * @LastEditors: chenyilin
+ * @LastEditTime: 2021-09-13 21:27:54
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  */
 
@@ -96,9 +96,7 @@ void pre_DIJ(){                 //构造图
                     s2 = ask_S(xx, yy);
                     if (s2 == -1 || (!a[xx][yy])) continue;
                     
-                    if(i == 9 && j == 8){
-						cnt =cnt;
-					}
+
                     add(s1, s2);
                 }
             }
