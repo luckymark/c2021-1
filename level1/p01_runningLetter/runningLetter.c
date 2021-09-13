@@ -5,7 +5,7 @@
 
 int main()
 {
-	int speed = 0;
+    int speed = 0;
     printf("Please input a speed.(1-1000)\n");
     if(!(scanf("%d",&speed) && speed>0 && speed<1001))
     {
@@ -17,20 +17,20 @@ int main()
 
     int sleepSpeed = 1000/speed;
     for (int i = 0; i <= 80; i++)
-	{
+    {
 
-		printf("w\b\b ");
+        printf("w\b\b ");
 
-		Sleep(sleepSpeed);
-		printf("w");
-		Sleep(sleepSpeed);
+	    Sleep(sleepSpeed);
+	    printf("w");
+	    Sleep(sleepSpeed);
 	}
-	for (int i = 0; i <= 80; i++)
+    for (int i = 0; i <= 80; i++)
 	{
-		Sleep(sleepSpeed*2);
-		printf("\b \b\bw");
-	}
+        Sleep(sleepSpeed*2);
+        printf("\b \b\bw");
+    }
 
-	return 0;
+    return 0;
 
 }
