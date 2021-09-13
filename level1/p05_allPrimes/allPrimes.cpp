@@ -1,3 +1,4 @@
+#include<ctime>
 #include<cstdio>
 #include<cstdlib>
 #include<cstring>
@@ -28,6 +29,8 @@ int primeSet[MAX_SIZE];
 
 bool isPrime[MAX_SIZE];
 
+double start_Time,end_Time;
+
 void Euler_Sieve(){
 	rep(i,2,MAX_SIZE-5){
 		if(!isPrime[i])
@@ -41,8 +44,11 @@ void Euler_Sieve(){
 }
 
 int main(){
+	start_Time=(double)clock();
 	Euler_Sieve();
 	rep(i,1,primeSize)
 		printf("%d ",primeSet[i]);
+	end_Time=(double)clock();
+	printf("\n%lf ms\n",end_Time-start_Time);
 	return 0;
 }
