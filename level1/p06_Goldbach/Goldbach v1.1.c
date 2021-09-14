@@ -12,7 +12,7 @@ int main()
     for(int i = 2;i<=MAXNUM;i++)
     {
         if(isPrime(i))
-            ++cnt;
+        ++cnt;
     }
     int * primeArr = malloc(sizeof(int) * cnt);
     if(primeArr == NULL)
@@ -45,15 +45,15 @@ int main()
                 }
             }
         }
-        if (!yes)
-        {
-            printf("Goldbach's conjecture is not correct");
-            exit(1);
-        }
-        Skip: continue;
+        printf("Goldbach's conjecture is not correct");
+        free(primeArr);
+        exit(1);
+        Skip: 
+            continue;
     }
 
     printf("Goldbach's conjecture is correct");
+    free(primeArr);
     return 0;
 }
 
