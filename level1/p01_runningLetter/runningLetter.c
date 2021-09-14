@@ -21,12 +21,12 @@ int main()
 
         printf("w\b\b ");
 
-	    Sleep(sleepSpeed);
-	    printf("w");
-	    Sleep(sleepSpeed);
-	}
+	Sleep(sleepSpeed);
+	printf("w");
+	Sleep(sleepSpeed);
+    }
     for (int i = 0; i <= 80; i++)
-	{
+    {
         Sleep(sleepSpeed*2);
         printf("\b \b\bw");
     }
