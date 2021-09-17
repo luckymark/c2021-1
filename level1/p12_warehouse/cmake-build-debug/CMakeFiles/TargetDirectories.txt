@@ -1,0 +1,3 @@
+C:/Users/92824/c2021-1/level1/p12_warehouse/cmake-build-debug/CMakeFiles/p12_warehouse.dir
+C:/Users/92824/c2021-1/level1/p12_warehouse/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/92824/c2021-1/level1/p12_warehouse/cmake-build-debug/CMakeFiles/rebuild_cache.dir

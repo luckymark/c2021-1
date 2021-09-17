@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/92824/c2021-1/level1/p12_warehouse/linkedlist.h
+type_traits
+-
+
+C:/Users/92824/c2021-1/level1/p12_warehouse/main.cpp
+cstdio
+-
+map
+-
+linkedlist.h
+C:/Users/92824/c2021-1/level1/p12_warehouse/linkedlist.h
+windows.h
+-
+
