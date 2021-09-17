@@ -6,7 +6,7 @@ int main()
 {	
 	char c;
 	int n=0,width=20,k=0;
-	printf("ÇëÊäÈë×Ö·û %c\n");
+	printf("please press word \n");
 	scanf("%c",&c);
 	while(1)
 	{
