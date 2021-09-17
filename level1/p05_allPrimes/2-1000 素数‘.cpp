@@ -30,7 +30,7 @@ int main()
 			}
 		end=clock();
 		cout<<endl;
-		cout<<"ำรมห"<<(double)((end-begin)/1000)<<"S"<<endl;
+		cout<<"spent"<<(double)((end-begin)/1000)<<"S"<<endl;
 		return 0;
 	}
 int isprime(int x)
