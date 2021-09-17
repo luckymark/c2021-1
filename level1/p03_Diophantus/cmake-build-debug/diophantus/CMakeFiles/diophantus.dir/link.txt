@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\diophantus.dir/objects.a
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\diophantus.dir/objects.a @CMakeFiles\diophantus.dir\objects1.rsp
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\diophantus.dir/objects.a -Wl,--no-whole-archive -o diophantus.exe -Wl,--out-implib,libdiophantus.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\diophantus.dir\linklibs.rsp

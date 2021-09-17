@@ -1,0 +1,5 @@
+D:/myprojects/c2021-1/level1/p06_Goldbach/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/myprojects/c2021-1/level1/p06_Goldbach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/myprojects/c2021-1/level1/p06_Goldbach/cmake-build-debug/goldbach/CMakeFiles/rebuild_cache.dir
+D:/myprojects/c2021-1/level1/p06_Goldbach/cmake-build-debug/goldbach/CMakeFiles/goldbach.dir
+D:/myprojects/c2021-1/level1/p06_Goldbach/cmake-build-debug/goldbach/CMakeFiles/edit_cache.dir

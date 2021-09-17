@@ -1,0 +1,5 @@
+D:/myprojects/c2021-1/level1/p03_Diophantus/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/myprojects/c2021-1/level1/p03_Diophantus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/myprojects/c2021-1/level1/p03_Diophantus/cmake-build-debug/diophantus/CMakeFiles/edit_cache.dir
+D:/myprojects/c2021-1/level1/p03_Diophantus/cmake-build-debug/diophantus/CMakeFiles/diophantus.dir
+D:/myprojects/c2021-1/level1/p03_Diophantus/cmake-build-debug/diophantus/CMakeFiles/rebuild_cache.dir

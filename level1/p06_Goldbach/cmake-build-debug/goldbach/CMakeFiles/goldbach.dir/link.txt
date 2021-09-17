@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\goldbach.dir/objects.a
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\goldbach.dir/objects.a @CMakeFiles\goldbach.dir\objects1.rsp
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\goldbach.dir/objects.a -Wl,--no-whole-archive -o goldbach.exe -Wl,--out-implib,libgoldbach.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\goldbach.dir\linklibs.rsp

@@ -1,0 +1,5 @@
+D:/myprojects/c2021-1/level1/p04_ narcissus/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/myprojects/c2021-1/level1/p04_ narcissus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/myprojects/c2021-1/level1/p04_ narcissus/cmake-build-debug/narcissus/CMakeFiles/narcissus.dir
+D:/myprojects/c2021-1/level1/p04_ narcissus/cmake-build-debug/narcissus/CMakeFiles/edit_cache.dir
+D:/myprojects/c2021-1/level1/p04_ narcissus/cmake-build-debug/narcissus/CMakeFiles/rebuild_cache.dir
