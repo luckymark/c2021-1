@@ -20,7 +20,7 @@ int main(void){
 	printf("count=%d\n",count);
 	finish =clock();
 	Total_time = (double)(finish - start)/CLOCKS_PER_SEC;
-	printf("ÓÃÊ±£º%f second",Total_time);
+	printf("ç”¨æ—¶ï¼š%f second",Total_time);
 	return 0;
 }
 int isPrime(int i){

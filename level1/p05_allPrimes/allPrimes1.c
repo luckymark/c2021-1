@@ -21,7 +21,7 @@ int main(){
 	}
 	finish=clock();
 	Total_time = (double)(finish - start)/CLOCKS_PER_SEC;
-	printf("\nÓÃÊ±%f second\n",Total_time);
+	printf("\nç”¨æ—¶%f second\n",Total_time);
 	printf("count=%d",count);
 	return 0;
 }

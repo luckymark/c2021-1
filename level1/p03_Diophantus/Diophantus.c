@@ -9,7 +9,7 @@ int main(){
 			break;
 		}
 	}
-	printf("¶ù×ÓËÀÊ±¶ª·¬Í¼%dËê",ret-4);
+	printf("å„¿å­æ­»æ—¶ä¸¢ç•ªå›¾%då²",ret-4);
 	return 0;
 }
 int judge (float i){

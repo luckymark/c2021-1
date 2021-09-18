@@ -11,9 +11,9 @@ int main(void){
 		}
 	}
 	if(ret==0 || n<2){
-		printf("%d²»ÊÇËØÊý",n); 
+		printf("%dä¸æ˜¯ç´ æ•°",n); 
 	} else {
-		printf("%dÊÇËØÊý",n);
+		printf("%dæ˜¯ç´ æ•°",n);
 	}
 	return 0;
 }
