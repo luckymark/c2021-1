@@ -12,3 +12,10 @@
 
 欢迎大神们都去玩玩这个：
 [Level2-实现 SkipList 算法](../../level2/SkipList/Readme.md)
+
+1.creat a chat
+2.printf  each  value(枚举）
+3.反序
+4.循环查找 5 
+if  return 节点
+eles return 0
