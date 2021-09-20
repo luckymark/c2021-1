@@ -6,9 +6,11 @@
 #include <stdbool.h>
 #include <time.h>
 
+#define MAX 1000
+
 int main(void)
 {
-    int primes[500] = {2, 3};
+    int primes[MAX] = {2, 3};
     int i = 2;
     bool flag = true;
     clock_t start, stop;
@@ -16,7 +18,7 @@ int main(void)
     
     start = clock();
 
-    for (int j = 4; j <= 1000; j++)
+    for (int j = 4; j <= MAX; j++)
     {
         for (int k = 0; k < i; k++)
         {

@@ -4,13 +4,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#define MAX 100
+
 int main(void)
 {
-    int primes[100] = {2, 3};
+    int primes[MAX] = {2, 3};
     int i = 2;
     bool flag = true;
 
-    for (int j = 4; j <= 100; j++)
+    for (int j = 4; j <= MAX; j++)
     {
         for (int k = 0; k < i; k++)
         {
@@ -27,7 +29,7 @@ int main(void)
         flag = true;
     }
 
-    for (int j = 4; j <= 100; j += 2)
+    for (int j = 4; j <= MAX; j += 2)
     {
         for (int k = 0; k < i; k++)
         {

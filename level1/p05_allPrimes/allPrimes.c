@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <time.h>
 
+#define MAX 1000
+
 int main(void)
 {
     bool flag = true;
@@ -14,7 +16,7 @@ int main(void)
     
     start = clock();
 
-    for (int i = 2; i <= 1000; i++)
+    for (int i = 2; i <= MAX; i++)
     {
         for (int j = 2; j <= (int)sqrt(i); j++)
         {

@@ -3,12 +3,14 @@
 //
 #include <stdio.h>
 
+#define LENGTH  64
+
 void hanoi(int, char, char, char);
 void move(int i, char, char, char);
 
 int main(void)
 {
-    int i = 2;
+    int i = LENGTH;
     char a = 'A';
     char b = 'B';
     char c = 'C';
