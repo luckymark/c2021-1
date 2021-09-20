@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\p11_linkedList.dir/objects.a
+C:\Users\dxl\DOCUME~1\TENCEN~1\617267~1\FileRecv\mingw64\bin\ar.exe cr CMakeFiles\p11_linkedList.dir/objects.a @CMakeFiles\p11_linkedList.dir\objects1.rsp
+C:\Users\dxl\DOCUME~1\TENCEN~1\617267~1\FileRecv\mingw64\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\p11_linkedList.dir/objects.a -Wl,--no-whole-archive -o p11_linkedList.exe -Wl,--out-implib,libp11_linkedList.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\p11_linkedList.dir\linklibs.rsp
