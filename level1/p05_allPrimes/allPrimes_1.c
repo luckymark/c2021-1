@@ -39,7 +39,7 @@ int main(void)
     stop = clock();
     
     time = (double)(stop - start) / CLK_TCK;
-    printf("\nËùÓÃÊ±¼äÎª£º%lfÃë", time);
+    printf("\nè¿è¡Œæ—¶é—´ä¸º%lfæ¯«ç§’", time);
     
     return 0;
 }
