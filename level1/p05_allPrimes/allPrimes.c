@@ -4,10 +4,15 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include <time.h>
 
 int main(void)
 {
     bool flag = true;
+    clock_t start, stop;
+    double time;
+    
+    start = clock();
 
     for (int i = 2; i <= 1000; i++)
     {
@@ -25,5 +30,12 @@ int main(void)
         }
         flag = true;
     }
+    
+    stop = clock();
+    
+    time = (double)(stop - start) / CLK_TCK;
+    printf("\n所用时间为：%lf秒", time);
+    
+    return 0;
 }
 

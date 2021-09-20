@@ -4,12 +4,17 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include <time.h>
 
 int main(void)
 {
     int primes[500] = {2, 3};
     int i = 2;
     bool flag = true;
+    clock_t start, stop;
+    double time;
+    
+    start = clock();
 
     for (int j = 4; j <= 1000; j++)
     {
@@ -30,5 +35,12 @@ int main(void)
 
     for (int k = 0; k < i; k++ )
         printf("%d ", primes[k]);
+        
+    stop = clock();
+    
+    time = (double)(stop - start) / CLK_TCK;
+    printf("\n所用时间为：%lf秒", time);
+    
+    return 0;
 }
 
