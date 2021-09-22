@@ -1,3 +1,0 @@
-"E:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\p02_isPrime.dir/objects.a
-E:\1\mingw32\bin\ar.exe cr CMakeFiles\p02_isPrime.dir/objects.a @CMakeFiles\p02_isPrime.dir\objects1.rsp
-E:\1\mingw32\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\p02_isPrime.dir/objects.a -Wl,--no-whole-archive -o p02_isPrime.exe -Wl,--out-implib,libp02_isPrime.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\p02_isPrime.dir\linklibs.rsp
