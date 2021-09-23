@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 #define Length 100
+#define TIME 100
 
 int main() {
     int n = Length;
@@ -16,6 +18,7 @@ int main() {
         for (j = 0;j <= k; j++)
             printf(" ");
         printf("%s", arr);
+        Sleep(TIME);
         system("cls");
         if (m < n)
         {
