@@ -26,4 +26,4 @@ int main()
 	for (int i = 4; i < M; i += 2)
 		printf("%d=%d+%d\n", i, Sprm[i][1], Sprm[i][2]);
 	return 0;
-}
+}//sunxiaorui

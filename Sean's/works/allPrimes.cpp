@@ -30,4 +30,4 @@ int main()
 	Endtime = clock();
 	printf("Running time is:%lfs\n", (double)(Endtime - Starttime)/CLOCKS_PER_SEC);
 	return 0;
-}
+}//sunxiaorui

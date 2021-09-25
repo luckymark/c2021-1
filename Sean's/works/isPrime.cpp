@@ -27,4 +27,4 @@ int main()
 	scanf_s("%d",&n);
 	Prime(n);
 	return 0;
-}
+}//sunxioarui

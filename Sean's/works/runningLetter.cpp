@@ -19,6 +19,5 @@ int main()
 {
 	Circulate(1);
 	Circulate(0);
-	system("pause");
 	return 0;
-}
+}//sunxiaorui

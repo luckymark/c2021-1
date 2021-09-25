@@ -26,4 +26,4 @@ int main()
 	scanf_s("%d", &n);
 	Hanoi(n, 1, 3);
 	return 0;
-}
+}//sunxiaorui

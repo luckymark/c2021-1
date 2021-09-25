@@ -40,4 +40,4 @@ int main()
 	if (option == 1) encrypt(str);
 	else decrypt(str);
 	return 0;
-}
+}//sunxiaorui

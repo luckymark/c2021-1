@@ -12,4 +12,4 @@ int main()
 		if (ans == i) printf("%d\n", ans);
 	}
 	return 0;
-}
+}//sunxiaorui
