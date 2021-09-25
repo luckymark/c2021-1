@@ -1,0 +1,4 @@
+﻿  线性筛.cpp
+C:\Users\86187\Desktop\c2021-1\Sean's\Basic Algorithm\线性筛.cpp(5,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\86187\Desktop\c2021-1\Sean's\Basic Algorithm\线性筛.cpp(6,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  Basic Algorithm.vcxproj -> C:\Users\86187\Desktop\c2021-1\Debug\Basic Algorithm.exe
