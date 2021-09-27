@@ -1,0 +1,3 @@
+﻿  哥德巴赫.c
+Debug\哥德巴赫.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  哥德巴赫.vcxproj -> D:\visual studio\哥德巴赫\Debug\哥德巴赫.exe

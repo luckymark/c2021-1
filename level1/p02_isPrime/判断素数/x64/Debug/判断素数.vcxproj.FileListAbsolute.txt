@@ -1,0 +1,1 @@
+D:\visual studio\判断素数\x64\Debug\判断素数.exe
