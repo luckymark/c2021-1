@@ -3,7 +3,7 @@
 #include<cstring>
 #include<algorithm>
 
-#define MAX_SIZE 105
+#define OFFSET 1
 #define INF 0x7f7f7f7f
 
 #define max(x,y) (x)>(y)?(x):(y)
@@ -23,35 +23,33 @@ inline void Read(int &x){
 	while(ch>='0' && ch<='9') x=x*10+ch-'0',ch=getchar();
 }
 
-bool isPrime[MAX_SIZE];
+int a;
+char ch;
 
-int primeCnt;
-int primeSet[MAX_SIZE];
-
-void Euler_Sieve(){
-	rep(i,2,MAX_SIZE){
-		if(!isPrime[i]) primeSet[++primeCnt]=i;
-		for(int j=1;i*primeSet[j]<=MAX_SIZE;j++){
-			isPrime[i*primeSet[j]]=1;
-			if(i%primeSet[j]==0)
-				break;
-		}
+void Encrypt(){
+	ch=getchar();
+	while(ch!='\n' && ch!=EOF){
+		putchar(ch+OFFSET);
+		ch=getchar();
 	}
 	return;
 }
 
-bool Valid(int X){
-	for(int i=1;i<=primeCnt && primeSet[i]<=X;i++)
-		for(int j=1;j<=primeCnt && primeSet[i]+primeSet[j]<=X;j++)
-			if(!isPrime[X-primeSet[i]-primeSet[j]])
-				return true;
-	return false;
+void Decrypt(){
+	ch=getchar();
+	while(ch!='\n' && ch!=EOF){
+		putchar(ch-OFFSET);
+		ch=getchar();
+	}
+	return;	
 }
 
 int main(){
-	Euler_Sieve();
-	rep(i,5,MAX_SIZE-5)
-		printf("%d:%s\n",i,Valid(i)?"True":"False");
+	printf("1 - Encrypt, 2 - Decrypt\n");
+	scanf("%d\n",&a);
+	if(a==1)
+		Encrypt();
+	else if(a==2)
+		Decrypt();
 	return 0;
 }
-

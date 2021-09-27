@@ -41,6 +41,7 @@ void Euler_Sieve(){
 				break;
 		}
 	}
+	return;
 }
 
 int main(){
