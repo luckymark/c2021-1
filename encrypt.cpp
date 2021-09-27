@@ -4,11 +4,10 @@
 #include <string.h>
 #define N 100
 using namespace std;
-//凯撒密码
 //加密公式 f(a)=(a+3) mod 26
 //解密公式 f(a)=(a+23) mod 26
-void Encry(char *strI,int numB,int model);//加密公式函数
-void Decry(char *strI,int numB,int model);//解密公式函数
+void Encry(char *strI,int numB,int model);
+void Decry(char *strI,int numB,int model);
 int FileOut(char *strI);
 int main()
 {
@@ -17,26 +16,26 @@ int main()
     int numB;
     while(1)
     {
-        cout<<"mo shi\n";
-        cout<<"1.jiami\n";
-        cout<<"2.jie mi \n";
+        cout<<"select model\n";
+        cout<<"1.Encry\n";
+        cout<<"2.Decry \n";
         cout<<"3.quit\n";
         cin>>model;
         cout<<endl;
         switch(model)
         {
             case 1:
-                cout<<"char";
+                cout<<"code";
                 cin>>str;
-                cout<<"count";
+                cout<<"how long you want";
                 cin>>numB;
                 Encry(str,numB,model);
                 cout<<endl;
                 break;
             case 2:
-                cout<<"char";
+                cout<<"code";
                 cin>>str;
-                cout<<"count";
+                cout<<"how long it is";
                 cin>>numB;
                 Decry(str,numB,model);
                 cout<<endl;
@@ -51,7 +50,7 @@ int main()
     return 0;
 }
 void Encry(char *strI,int numB,int model)
-{//明文串 秘钥 功能模式
+{
     if(model==1)
     {
         for(int i=0; i<strlen(strI); i++)
@@ -71,7 +70,7 @@ void Encry(char *strI,int numB,int model)
     }
     else
     {
-        cout<<"cannot"<<endl;
+        cout<<"do not have this model"<<endl;
     }
 }
 void Decry(char *strI,int numB,int model)
@@ -91,11 +90,11 @@ void Decry(char *strI,int numB,int model)
                 strI[i] = ((strI[i]-'a')+num)%26+'a';
             }
         }
-        cout<<"success"<<strI<<endl;
+        cout<<"output already"<<strI<<endl;
     }
     else
     {
-        cout<<"cannot"<<endl;
+        cout<<"do not have this model"<<endl;
     }
 }
 int FileOut(char *strI)
@@ -105,8 +104,7 @@ int FileOut(char *strI)
     int len=strlen(strI);
     if( strI == NULL || len ==0 )
         return false;
-    //! 打开文件句柄
-    if( (fp = fopen( "miwen.txt","w" )) == NULL )      // 文本模式写
+    if( (fp = fopen( "edit.txt","w" )) == NULL )
         return false;
     iWrite = fwrite(strI, 1, len, fp );
     fclose(fp);
