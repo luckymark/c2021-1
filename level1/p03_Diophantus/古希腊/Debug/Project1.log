@@ -1,4 +1,0 @@
-﻿  practice.c
-  LINK : 没有找到 D:\visual studio\Project1\Debug\Project1.exe 或上一个增量链接没有生成它；正在执行完全链接
-practice.obj : error LNK2019: 无法解析的外部符号 _sum，函数 _main 中引用了该符号
-D:\visual studio\Project1\Debug\Project1.exe : fatal error LNK1120: 1 个无法解析的外部命令
