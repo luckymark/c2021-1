@@ -1,0 +1,4 @@
+ToolSet: w64 6.0 (local)@C:\Users\31172\Desktop\MINGW64\mingw64
+Options: 
+
+Options:
