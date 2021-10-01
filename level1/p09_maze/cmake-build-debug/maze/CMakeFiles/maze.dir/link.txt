@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\maze.dir/objects.a
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\maze.dir/objects.a @CMakeFiles\maze.dir\objects1.rsp
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\maze.dir/objects.a -Wl,--no-whole-archive -o maze.exe -Wl,--out-implib,libmaze.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\maze.dir\linklibs.rsp

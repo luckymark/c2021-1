@@ -1,5 +1,0 @@
-D:/myprojects/c2021-1/level1/p05_allPrimes/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/myprojects/c2021-1/level1/p05_allPrimes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/myprojects/c2021-1/level1/p05_allPrimes/cmake-build-debug/allprime/CMakeFiles/allprime.dir
-D:/myprojects/c2021-1/level1/p05_allPrimes/cmake-build-debug/allprime/CMakeFiles/edit_cache.dir
-D:/myprojects/c2021-1/level1/p05_allPrimes/cmake-build-debug/allprime/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,0 @@
-D:/myprojects/c2021-1/level1/p01_runningLetter/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/myprojects/c2021-1/level1/p01_runningLetter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/myprojects/c2021-1/level1/p01_runningLetter/cmake-build-debug/runningletters/CMakeFiles/rebuild_cache.dir
-D:/myprojects/c2021-1/level1/p01_runningLetter/cmake-build-debug/runningletters/CMakeFiles/runningletters.dir
-D:/myprojects/c2021-1/level1/p01_runningLetter/cmake-build-debug/runningletters/CMakeFiles/edit_cache.dir
