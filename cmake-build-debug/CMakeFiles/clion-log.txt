@@ -1,0 +1,4 @@
+"D:\Software\CLion\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" E:\Data\UESTC\ProgramDesignDivA\Repository
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Data/UESTC/ProgramDesignDivA/Repository/cmake-build-debug

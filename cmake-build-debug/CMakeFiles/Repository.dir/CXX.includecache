@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Data/UESTC/ProgramDesignDivA/Repository/level1/p09_maze/Maze.cpp
+cstdio
+-
+cstdlib
+-
+cstring
+-
+algorithm
+-
+
