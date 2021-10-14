@@ -1,0 +1,3 @@
+"D:\Software\CLion\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Repository.dir/objects.a
+D:\Software\Dev-CPP\MinGW64\bin\ar.exe cr CMakeFiles\Repository.dir/objects.a @CMakeFiles\Repository.dir\objects1.rsp
+D:\Software\Dev-CPP\MinGW64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Repository.dir/objects.a -Wl,--no-whole-archive -o Repository.exe -Wl,--out-implib,libRepository.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Repository.dir\linklibs.rsp
