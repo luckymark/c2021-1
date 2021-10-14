@@ -65,8 +65,10 @@ int main(){
 			default:
 				break;
 		}
-		if(KeyStat)
+		if(KeyStat){
 			PrintGraph();
+			Sleep(80);
+		}
 		if(isEscaped(CurX,CurY)){
 			printf("You Win!\n");
 			return 0;
