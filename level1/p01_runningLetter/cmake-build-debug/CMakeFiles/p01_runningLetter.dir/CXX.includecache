@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/myprojects/c2021-1/level1/p01_runningLetter/main.cpp
+string.h
+-
+math.h
+-
+stdio.h
+-
+windows.h
+-
+
