@@ -8,9 +8,9 @@ inline void dfs(int x,int st,int ed){
 		printf("%c -> %c\n",3-st-ed+'A',ed+'A');
 		return;
 	}
-	dfs(n-1,st,3-st-ed);
+	dfs(x-1,st,3-st-ed);
     printf("%c -> %c\n",st+'A',ed+'A');
-    dfs(n-1,3-st-ed,ed);
+    dfs(x-1,3-st-ed,ed);
 }
 int main(){
 	scanf("%d",&n);
