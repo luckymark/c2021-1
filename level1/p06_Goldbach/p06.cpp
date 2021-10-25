@@ -1,5 +1,14 @@
+/*
+ * @Author: your name
+ * @Date: 2021-09-06 21:09:42
+ * @LastEditTime: 2021-10-25 20:45:45
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedc:\VScode_c\level1\p06.cpp
+ */
 #include <cstdio>
 #include <cstring>
+#include <cstdlib>
 using namespace std;
 
 const int MAXN = 100;
@@ -21,18 +30,24 @@ void makepri(){
 	}
 }
 
-void _Goldbach(int x){
-	for (int i = 1; pri[i] < x; i++) for (int j = i; pri[i] + pri[j] < x; j++){
-		if (is_p[x - pri[i] - pri[j]]){
-			printf("%d = %d + %d + %d\n", x, pri[i], pri[j], x - pri[i] - pri[j]);
-			return ;
+bool _Goldbach(int x){
+	for (int i = 1; pri[i] < x; i++) {
+		if (is_p[x - pri[i]]){
+			printf("%d = %d + %d\n", x, pri[i], x - pri[i]);
+			return true;
 		}
 	}
+	return false;
 }
 
 int main(){
 	makepri();
 	
-	for (int i = 3; i <= MAXN; i++) _Goldbach(i);
+	for (int i = 4; i <= MAXN; i+=2){
+		if (!_Goldbach(i)){
+			printf("Goldbach was wrong\n");
+			exit(0);
+		}
+	}
 	return 0;
 }
