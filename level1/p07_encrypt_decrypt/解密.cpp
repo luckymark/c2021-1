@@ -4,11 +4,11 @@
 int main()
 {
 	char c[MAX];
-	scanf("%s", c);
+	gets(c);
 	int len = strlen(c);
 	for (int i = 0; i < len; i++)
 	{
-		if (c[i] == 33)
+		if (c[i] == 32)
 		{
 			c[i] = 126;
 		}
