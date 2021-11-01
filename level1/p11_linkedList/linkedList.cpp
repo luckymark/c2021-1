@@ -19,13 +19,14 @@ void write(int x){
 typedef struct node{
 	int val,vis;
 	struct node *next; 
-}linklist;
-linklist *Createlist(){
-	linklist *head,*x,*end;
-	head=(linklist *)malloc(sizeof(linklist));
+};
+node *Createlist(){
+	node *head,*x,*end;
+	head=(node *)malloc(sizeof(node));
+	scanf("%d",&head->val),head->vis=1;
 	end=head;
-	for(int i=1;i<=n;i++){
-		x=(linklist *)malloc(sizeof(linklist));
+	for(int i=1;i<=n-1;i++){
+		x=(node *)malloc(sizeof(node));
 		scanf("%d",&x->val);
 		x->vis=1;
 		end->next=x;
@@ -35,7 +36,9 @@ linklist *Createlist(){
 	return head;
 } 
 node *reverse(node *head){
-	if(head==NULL||head->next==NULL) return head; 
+	if(head==NULL||head->next==NULL){
+		return head;
+	} 
 	node* newhead=reverse(head->next);
 	head->next->next=head;
 	head->next=NULL;
@@ -43,26 +46,28 @@ node *reverse(node *head){
 } 
 
 int main(){
-	scanf("%d",&n);
-	linklist *list=Createlist();
-	node *h=reverse(list);
+	n=read();
+	node *list=Createlist();
+	list=reverse(list);
+	node *h=list;
 	int cnt=1;
-	while(h->next!=NULL){
-		if(h->val==5&&h->vis==1) {
-			write(n-cnt+1);
-			putchar('\n');
+	while(h!=NULL){
+		if(h->val==5&&h->vis==1){
 			h->vis=0;
+			write(n-cnt+1);
+			putchar(' ');
 			break;
 		}
 		h=h->next;
 		cnt++;
 	}
+	h=list;
 	cnt=1;
-	while(h->next!=NULL){
-		if(h->val==5&&h->vis==1) {
-			write(n-cnt+1);
-			putchar('\n');
+	while(h!=NULL){
+		if(h->val==5&&h->vis==1){
 			h->vis=0;
+			write(n-cnt+1);
+			putchar(' ');
 			break;
 		}
 		h=h->next;
