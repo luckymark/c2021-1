@@ -3,9 +3,8 @@
 typedef struct LINK {
 	int num;
 	LINK* next;
-
-
-};
+}LINK;
+LINK* tlist(LINK* temp);
 void Lfree(LINK* head) {
 	LINK* a, * b;
 	a = head;
@@ -24,8 +23,8 @@ void creat(int i, LINK* head) {
 	}
 	head->next = a[0];
 	for (int m = 0; m < i; m++) {
-		printf("ÇëÊäÈëÊý¾Ý");
-		scanf_s("%d", &a[m]->num);
+		printf("è¯·è¾“å…¥æ•°æ®");
+		scanf("%d", &a[m]->num);
 		printf("\n");
 		if (m == i - 1) {
 			a[m]->next = NULL;
@@ -43,13 +42,13 @@ void Lprint(LINK* head) {
 	int i = 1;
 	LINK* temp = head->next;
 	while (temp) {
-		printf("µÚ%d¸öÁ´±íÖÐnumÊÇ£º%d", i, temp->num);
+		printf("ç¬¬%dä¸ªé“¾è¡¨ä¸­numæ˜¯ï¼š%d\n", i, temp->num);
 		i++;
 
 		temp = temp->next;
 	}
 }
-void find(LINK* head,int *a) {
+void find(LINK* head, int* a) {
 	for (int i = 0; i < 10; i++) {
 		a[i] = 0;
 	}
@@ -71,24 +70,52 @@ void find(LINK* head,int *a) {
 int main() {
 	LINK* head = (LINK*)malloc(sizeof(LINK));
 	if (head == NULL) {
-		printf("·ÖÅäÊ§°Ü");
+		printf("åˆ†é…å¤±è´¥");
 	}
 	head->num = 0;
 	head->next = NULL;
 	creat(4, head);
 	Lprint(head);
 	int r[10];
-	find(head,r);
+	find(head, r);
 	int count = 0;
 	for (int i = 0; i < 10; i++) {
 
 		if (r[i] == 1) {
-			printf("\tÔÚµÚ%d¸ö±í\n", i);
+			printf("\t5åœ¨ç¬¬%dä¸ªè¡¨\n", i);
 		}
 		count = r[i] + count;
 	}
 	if (count == 0) {
-		printf("-1");
+		printf("\n-1\n");
 	}
+	printf("é€†åºåŽï¼š\n");
+	Lprint(tlist(head));
 	Lfree(head);
+}
+LINK* tlist(LINK* link) {
+
+	LINK* temp = link->next;
+	LINK* NEW = (LINK*)malloc(sizeof(LINK));
+	NEW = link;
+	while (temp) {
+
+		LINK* node = (LINK*)malloc(sizeof(LINK));
+
+		node->num = temp->num;
+		if (temp == link->next) {
+			node->next = NULL;
+			NEW->next = node;
+			temp = temp->next;
+		}
+		else {
+			node->next = NEW->next;
+			NEW->next = node;
+			temp = temp->next;
+		}
+
+	}
+
+
+	return NEW;
 }
