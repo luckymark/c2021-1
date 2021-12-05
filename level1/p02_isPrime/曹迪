@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main() {
+	int num = 0;
+	scanf_s("%d", &num);
+	int count = 2;
+	int a = 1;
+	for (; count < num; count++) {
+
+		if (num %count == 0) {
+			a = 0;
+		}
+	}
+
+		if (a == 0){
+			printf("不是素数");
+		}
+		if (a == 1) {
+			printf("是素数");
+		}
+	}
