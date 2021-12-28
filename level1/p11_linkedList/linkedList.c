@@ -29,6 +29,7 @@ int main()
     int number_n;
     printf("请输入要输入的数据个数：");
     scanf("%d",&number_n);
+    printf("请输入要输入的数据：");
     for(int i=0;i<number_n;i++)
     {
         scanf("%d",&number);
