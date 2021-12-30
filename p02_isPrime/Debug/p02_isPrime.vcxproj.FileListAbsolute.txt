@@ -1,2 +1,0 @@
-F:\C   C++\p02_isPrime\Debug\p02_isPrime.exe
-F:\C   C++\俸老师程序设计A班\p02_isPrime\Debug\p02_isPrime.exe

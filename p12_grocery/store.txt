@@ -1,7 +1,0 @@
-milk
-172
-juice
-100
-bear
-100
-
