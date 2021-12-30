@@ -1,0 +1,3 @@
+﻿D:\VS\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(加密解密.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  加密.cpp
+  加密解密.vcxproj -> F:\电子科技大学\C   C++\俸老师程序设计A班\p07_encrypt_decrypt\加密解密\Debug\加密.exe
