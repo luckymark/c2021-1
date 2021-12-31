@@ -1,0 +1,8 @@
+﻿  源.cpp
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(12,4): error C2561: “main”: 函数必须返回值
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(2): message : 参见“main”的声明
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(15,27): error C3688: 文本后缀“，”无效；未找到文文本运算符或文本运算符模板“operator """"，”
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(15,26): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(15,26): error C2146: 语法错误: 缺少“;”(在标识符“n”的前面)
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(15,27): error C2059: 语法错误:“)”
+C:\Users\XiaoZ\source\repos\level 1\p02\p02\源.cpp(6,2): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
