@@ -21,9 +21,6 @@
     <ClCompile Include="runningLetter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C0.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Diophantus.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -40,6 +37,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="hanoi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="maze.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warehouse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pushBoxes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
