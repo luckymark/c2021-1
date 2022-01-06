@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct Link{
+    int  elem;
+    struct Link *next;
+}link;
+link * initLink();
+int selectElem(link * p,int elem,int n);
+void display(link *p);
+int main() 
+{
+    int foundnumber=0;
+    //初始化链表（5，2，3，4,5）
+    printf("初始化链表为：\n");
+    link *p=initLink();
+    p=amendElem(p, 1, 5);
+    display(p);
+    printf("请输入要查找的数字：\n");
+    scanf("%d",&foundnumber);
+    int ret=selectElem(p, foundnumber,1);
+    printf("%d\n",ret);
+    //再次查找
+    printf("正在进行第二次查找\n");
+    ret=selectElem(p, foundnumber,2);
+    printf("%d\n",ret);
+    system("pause");
+    return 0;
+}
+link * initLink(){
+    link * p=(link*)malloc(sizeof(link));
+    link * temp=p;
+    for (int i=1; i<6; i++) {
+        link *a=(link*)malloc(sizeof(link));
+        a->elem=i;
+        a->next=NULL;
+        temp->next=a;
+        temp=temp->next;
+    }
+    return p;
+}
+int selectElem(link * p,int elem,int n){
+    link * t=p;
+    int i=1;
+    while (t->next) {
+        t=t->next;
+        if (t->elem==elem&&n==1) {
+            return i;
+        }
+        else if(t->elem==elem&&n!=1)
+        {
+            n--;
+        }
+        i++;
+    }
+    return -1;
+}
+void display(link *p){
+    link* temp=p;
+    while (temp->next) {
+        temp=temp->next;
+        printf("%d",temp->elem);
+    }
+    printf("\n");
+}
+
