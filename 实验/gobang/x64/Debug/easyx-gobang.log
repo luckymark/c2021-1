@@ -1,0 +1,6 @@
+﻿  ChessBoard.cpp
+E:\Practice\easyx-gobang\ChessBoard.cpp(61,17): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\Practice\easyx-gobang\ChessBoard.cpp(61,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+E:\Practice\easyx-gobang\ChessBoard.cpp(292,12): warning C4101: “num”: 未引用的局部变量
+E:\Practice\easyx-gobang\ChessBoard.cpp(28): warning C4715: “find”: 不是所有的控件路径都返回值
+  easyx-gobang.vcxproj -> E:\Practice\easyx-gobang\x64\Debug\easyx-gobang.exe
